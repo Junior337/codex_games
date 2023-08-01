@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Oswald:wght@700&family=Righteous&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans:wght@400;700&family=Oswald:wght@400;700&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*logo*/
+.logo-site {
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(127, 140, 255);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+
+.sidebar {
+    position: fixed;
+    width: 240px;
+    left: -240px;
+    height: 100%;
+    background: #1e1e1e;
+    transition: all .5s ease;
+}
+
+.sidebar h1 {
+    font-size: 28px;
+    color: black;
+    line-height: 70px;
+    text-align: center;
+    background: #1b1b1b;
+    user-select: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.sidebar a {
+    display: block;
+    height: 65px;
+    width: 100%;
+    color: white;
+    line-height: 65px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+}
+
+.btn-menu {
+    padding: 0;
+
+}
+
+/*botão do menu lateral icone*/
+.btn-icon {
+    display: inline;
+
+    background-color: rgb(127, 140, 255);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    padding: 0px;
+    height: 40px;
+    width: 40px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 10px;
+
+}
+
+/*barra de navegação lista geral*/
+.links {
+    align-items: top;
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    list-style: none;
+    padding: 5px;
+    padding: 0;
+    border-radius: 20px;
+
+}
+
+/*barra de navegação lista 1*/
+.links li {
+    display: inline;
+    position: relative;
+}
+
+/*barra de navegação lista 1 ancoras*/
+.links li a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s;
+}
+
+/*barra de navegação lista 1 ancoras hover*/
+.links li a:hover {
+    border: none;
+    border-radius: 20px;
+    color: whitesmoke;
+    background-color: rgb(127, 140, 255);
+}
+
+/*barra de navegação sub-lista*/
+.links ul {
+    display: none;
+    left: 0;
+    position: absolute;
+    width: 70px;
+}
+
+
+
+
+
+
+
+
+
+/*barra de navegação sub-lista ancoras */
+.links li a:hover>ul {
+    display: none;
+}
+
+/*barra de navegação sub-lista block do hover*/
+.links li:hover>ul {
+    display: block;
+
+}
+
+/*barra de navegação sub-lista interna hover*/
+.links ul li:hover>ul {
+    display: block;
+}
+
+/*barra de navegação sub-lista ancoras */
+.links ul li a {
+    display: block;
+}
+
+/*barra de navegação sub-lista interna */
+.links ul ul {
+    width: 90px;
+    margin-bottom: 500px;
+    top: 0px;
+    position: absolute;
+}
+
+/*barra de navegação sub-lista interna 1 ancoras */
+.Nintendo-links {
+    display: none;
+    padding-left: 30px;
+}
+
+/*barra de navegação sub-lista interna 2 ancoras */
+.SEGA-links {
+    display: none;
+    padding-left: 30px;
+}
+
+/*barra de navegação sub-lista interna 3 ancoras */
+.SONY-links {
+    display: none;
+    padding-left: 30px;
+}
+
+/*barra de navegação sub-lista interna 3 ancoras */
+.MICROSOFT-links {
+    display: none;
+    padding-left: 30px;
+}
+
+/*barra de navegação listas posicionamento*/
+li {
+    margin: 0 30px;
+    display: inline;
+    position: relative;
+}
+
+/*botão home*/
+.home-btn {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+/*cabeçalho*/
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/banner.gif');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/*cabeçalho conteúdo*/
+.header-cont {
+    font-family: 'Oswald, sans-serif';
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/*cabeçalho conteúdo título*/
+.header-cont h2 {
+    font-size: 4vmin;
+}
+
+/*cabeçalho conteúdo linha*/
+.linha {
+    width: 150px;
+    height: 4px;
+    background: aquamarine;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/*cabeçalho contepudo subtítulo*/
+.header-cont h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
